@@ -3,23 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- Premium SEO Meta Tags -->
-    <title>PPN News - Breaking News, Latest Updates, and Global Insights</title>
-    <meta name="description" content="PPN News delivers up-to-the-minute global news coverage, breaking sports updates, analysis, videos, and deep-dives into current international affairs.">
-    <meta name="robots" content="index, follow">
-    <meta property="og:title" content="PPN News - Global Breaking Stories">
-    <meta property="og:description" content="Stay ahead with accurate real-time updates and professional world journalism reporting.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://ppnnews.com">
+    <title>PPN News - Breaking News & Global Insights</title>
+    <meta name="description" content="PPN News delivers up-to-the-minute global news coverage, breaking sports updates, and analysis.">
 
-    <!-- Favicon Links Provided in Assets -->
+    <!-- Favicon Links -->
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="manifest" href="site.webmanifest">
 
-    <!-- Premium Clean Typography -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Helvetica+Neue:wght@400;700;900&display=swap" rel="stylesheet">
@@ -37,13 +29,15 @@
         body { font-family: var(--font-stack); color: var(--dark-black); background-color: #ffffff; padding-bottom: 60px; }
         a { text-decoration: none; color: inherit; }
 
-        /* Navigation Bar Header */
+        /* FIXED NAVBAR: Changed to white background so the logo blends perfectly */
         header {
-            background-color: var(--dark-black);
-            color: #ffffff;
+            background-color: #ffffff;
+            color: var(--dark-black);
             position: sticky;
             top: 0;
             z-index: 1000;
+            border-bottom: 3px solid var(--cnn-red);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
         }
         .nav-container {
             max-width: 1200px;
@@ -51,12 +45,12 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            padding: 12px 20px;
+            padding: 10px 20px;
         }
         .logo-area { display: flex; align-items: center; gap: 15px; }
         
-        /* Direct Reference to Logo Image File */
-        .logo-img { height: 38px; width: auto; object-fit: contain; display: block; }
+        /* Fixed Logo alignment and scale sizing */
+        .logo-img { height: 45px; width: auto; object-fit: contain; display: block; }
         
         .live-badge {
             background-color: var(--cnn-red);
@@ -72,142 +66,112 @@
             0% { opacity: 1; } 50% { opacity: 0.5; } 100% { opacity: 1; }
         }
 
-        /* Breaking News Ticker Section */
         .ticker-bar {
             background-color: #f8f8f8;
             border-bottom: 1px solid var(--border-light);
-            padding: 10px 20px;
+            padding: 12px 20px;
             font-size: 14px;
         }
-        .ticker-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
+        .ticker-container { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; gap: 12px; }
         .ticker-label { color: var(--cnn-red); font-weight: 900; font-size: 12px; letter-spacing: 1px; }
 
-        /* Main Content Layout Grid */
-        .main-wrapper {
-            max-width: 1200px;
-            margin: 25px auto;
-            padding: 0 20px;
-        }
+        .main-wrapper { max-width: 1200px; margin: 25px auto; padding: 0 20px; }
+        .news-grid-system { display: grid; grid-template-columns: 2fr 1fr; gap: 30px; }
+        @media (max-width: 900px) { .news-grid-system { grid-template-columns: 1fr; } }
 
-        /* CNN Style Layout Architecture */
-        .news-grid-system {
-            display: grid;
-            grid-template-columns: 2fr 1fr;
-            gap: 30px;
-        }
-        @media (max-width: 900px) {
-            .news-grid-system { grid-template-columns: 1fr; }
-        }
-
-        /* Featured Article Component Styles */
-        .featured-hero {
-            border-bottom: 2px solid var(--dark-black);
-            padding-bottom: 25px;
-            margin-bottom: 25px;
-        }
+        .featured-hero { border-bottom: 2px solid var(--dark-black); padding-bottom: 25px; margin-bottom: 25px; }
         .featured-category { color: var(--cnn-red); font-weight: 900; font-size: 13px; letter-spacing: 0.5px; margin-bottom: 8px; }
-        .featured-title { font-size: 42px; font-weight: 900; line-height: 1.1; margin-bottom: 15px; letter-spacing: -1px; }
+        .featured-title { font-size: 38px; font-weight: 900; line-height: 1.1; margin-bottom: 15px; letter-spacing: -1px; }
         .featured-title:hover { color: var(--cnn-red); }
         .featured-hero img { width: 100%; height: auto; max-height: 480px; object-fit: cover; margin-bottom: 15px; }
         .featured-meta { font-size: 13px; color: var(--text-gray); margin-bottom: 12px; font-weight: bold; }
-        .featured-summary { font-size: 18px; line-height: 1.5; color: #222; }
+        .featured-summary { font-size: 17px; line-height: 1.5; color: #222; }
 
-        /* Secondary News Sidebar Layout */
         .sidebar-section { display: flex; flex-direction: column; gap: 20px; }
-        .section-heading {
-            font-size: 18px;
-            font-weight: 900;
-            border-bottom: 3px solid var(--dark-black);
-            padding-bottom: 5px;
-            margin-bottom: 15px;
-            letter-spacing: -0.5px;
-        }
-        .story-card {
-            display: flex;
-            gap: 15px;
-            padding-bottom: 18px;
-            border-bottom: 1px solid var(--border-light);
-        }
-        .story-card img { width: 100px; height: 75px; object-fit: cover; border-radius: 2px; }
+        .section-heading { font-size: 18px; font-weight: 900; border-bottom: 3px solid var(--dark-black); padding-bottom: 5px; margin-bottom: 15px; }
+        .story-card { display: flex; gap: 15px; padding-bottom: 18px; border-bottom: 1px solid var(--border-light); }
+        .story-card img { width: 110px; height: 80px; object-fit: cover; border-radius: 2px; }
         .story-card-content { flex: 1; }
         .story-category { font-size: 11px; font-weight: 900; color: var(--cnn-red); margin-bottom: 4px; }
         .story-title { font-size: 15px; font-weight: 700; line-height: 1.3; }
         .story-title:hover { color: var(--cnn-red); }
+        
+        .error-box { background: #fff5f5; color: #cc0000; padding: 20px; border-left: 4px solid #cc0000; margin: 20px 0; font-weight: bold; }
     </style>
 </head>
 <body>
 
-    <!-- Top Navigation Header Component -->
     <header>
         <div class="nav-container">
             <div class="logo-area">
-                <!-- Using Verbatim Image Asset Filename -->
-                <img src="ChatGPT Image Jun 15, 2026, 07_23_36 PM.png" alt="PPN News Logo" class="logo-img">
+                <!-- URL Encoded filename reference to ChatGPT Image Jun 15, 2026, 07_23_36 PM_2.png to ensure visibility across all browsers -->
+                <img src="ChatGPT%20Image%20Jun%2015,%202026,%2007_23_36%20PM_2.png" alt="PPN News Logo" class="logo-img">
                 <span class="live-badge">LIVE</span>
             </div>
         </div>
     </header>
 
-    <!-- Urgent Updates Banner Section -->
     <div class="ticker-bar">
         <div class="ticker-container">
             <span class="ticker-label">BREAKING:</span>
-            <span id="ticker-text">Loading direct satellite stream data updates...</span>
+            <span id="ticker-text">Connecting to news database network...</span>
         </div>
     </div>
 
-    <!-- Layout Grid Wrapper -->
     <main class="main-wrapper">
-        <div class="news-grid-system">
-            
-            <!-- Left Side: Featured Master Story Area -->
-            <section id="hero-showcase"></section>
+        <!-- Error Reporting Box Container if JSON is broken -->
+        <div id="error-display" style="display: none;"></div>
 
-            <!-- Right Side: Supporting Feed Column -->
+        <div class="news-grid-system">
+            <section id="hero-showcase">
+                <p>Loading frontline reports...</p>
+            </section>
+
             <section>
                 <h3 class="section-heading">LATEST NEWS</h3>
                 <div id="sidebar-feed" class="sidebar-section"></div>
             </section>
-            
         </div>
     </main>
 
-    <!-- State Processing Engine Script -->
     <script>
-        fetch('./posts.json')
-            .then(response => response.json())
+        // Appending cache-busting timestamp parameters prevents GitHub Pages from displaying old site versions
+        fetch('./posts.json?t=' + new Date().getTime())
+            .then(response => {
+                if (!response.ok) { throw new Error("Could not find your posts.json file."); }
+                return response.json();
+            })
             .then(articles => {
                 const heroContainer = document.getElementById('hero-showcase');
                 const listContainer = document.getElementById('sidebar-feed');
                 const tickerText = document.getElementById('ticker-text');
 
-                if (!articles || articles.length === 0) return;
+                if (!articles || articles.length === 0) {
+                    heroContainer.innerHTML = "<p>Database is empty. Add entries inside posts.json.</p>";
+                    return;
+                }
 
-                // Configure dynamic breaking news banner ticker text using primary post
-                tickerText.textContent = `${articles[0].title} — Read coverage highlights below.`;
+                heroContainer.innerHTML = ''; 
+                listContainer.innerHTML = '';
+
+                // Identify the main headline item dynamically
+                const featuredArticle = articles.find(a => a.isFeatured) || articles[0];
+                tickerText.textContent = `${featuredArticle.title} — Live updates on PPNNEWS.COM`;
 
                 articles.forEach(article => {
-                    if (article.isFeatured) {
-                        // Render main CNN-style dominant card layout
+                    if (article === featuredArticle) {
                         heroContainer.innerHTML = `
                             <article class="featured-hero">
                                 <a href="#">
                                     <div class="featured-category">${article.category}</div>
                                     <h2 class="featured-title">${article.title}</h2>
                                     <img src="${article.image}" alt="${article.title}">
-                                    <div class="featured-meta">Published: ${article.date}</div>
+                                    <div class="featured-meta">PUBLISHED: ${article.date}</div>
                                     <p class="featured-summary">${article.summary}</p>
                                 </a>
                             </article>
                         `;
                     } else {
-                        // Append items sequentially to feed columns
                         const card = document.createElement('div');
                         card.className = 'story-card';
                         card.innerHTML = `
@@ -221,7 +185,18 @@
                     }
                 });
             })
-            .catch(err => console.error('Data pipeline connectivity error:', err));
+            .catch(err => {
+                console.error(err);
+                const errorDisplay = document.getElementById('error-display');
+                errorDisplay.className = "error-box";
+                errorDisplay.style.display = "block";
+                errorDisplay.innerHTML = `
+                    <p>⚠️ PPN Website Render Error</p>
+                    <small style="display:block; margin-top:5px; color:#555;">
+                        Reason: ${err.message}. This usually happens if there is a missing comma or bracket inside your posts.json database, or if you are previewing the file locally on your computer instead of pushing it live to GitHub Pages.
+                    </small>
+                `;
+            });
     </script>
 </body>
 </html>
