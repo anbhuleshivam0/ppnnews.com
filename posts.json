@@ -1,42 +1,22 @@
 [
   {
+    "id": "china-metal-exports-g7-clash-2026",
+    "category": "BUSINESS",
+    "isFeatured": true,
+    "title": "Global Supply Shock: China’s Critical Metal Export Revenue Surges 44% Amid Looming Deadlines",
+    "date": "June 17, 2026",
+    "image": "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?q=80&w=1200&auto=format&fit=crop",
+    "summary": "As G7 leaders meet to confront Western over-reliance on Beijing’s supply chains, a dramatic surge in rare earth values and a massive shift in global metals has put tech manufacturers on high alert.",
+    "content": "A high-stakes economic standoff is intensifying across global supply chains. Fresh trade data reveals that while China's export volumes of critical rare earth elements grew by a modest 2.2% early this year, the financial value of those shipments skyrocketed by a staggering 44.9%."
+  },
+  {
     "id": "football-championship-2026",
     "category": "SPORTS",
-    "isFeatured": true,
+    "isFeatured": false,
     "title": "Historic Triumph: Dramatic Injury-Time Goal Seals Epic European Football Championship Title",
     "date": "June 17, 2026",
-    "image": "https://images.unsplash.com/photo-1508098682722-e99c43a406b2?q=80&w=1200&auto=format&fit=crop",
-    "summary": "In an unforgettable final that will be talked about for generations, an unexpected 94th-minute volley turned the stadium into pure bedlam, securing a historic crown against all odds.",
-    "content": "The match seemed destined for extra time as both defensive units refused to break over 90 grueling minutes. However, a masterclass tactical substitution in the dying moments opened up space along the left flank, leading to a spectacular cross that was clinically executed into the top corner."
-  },
-  {
-    "id": "global-markets-tech-surge",
-    "category": "BUSINESS",
-    "isFeatured": false,
-    "title": "Tech Clean-Energy Indices Surge to Record Highs Amid Global Policy Shift",
-    "date": "June 17, 2026",
-    "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=600&auto=format&fit=crop",
-    "summary": "Renewable infrastructure stocks witnessed unprecedented institutional inflows following updated international manufacturing trade alignments.",
+    "image": "https://images.unsplash.com/photo-1508098682722-e99c43a406b2?q=80&w=600&auto=format&fit=crop",
+    "summary": "In an unforgettable final that will be talked about for generations, an unexpected 94th-minute volley turned the stadium into pure bedlam.",
     "content": ""
-  },
-  {
-    "id": "ai-innovation-summit-news",
-    "category": "TECH",
-    "isFeatured": false,
-    "title": "Next-Gen Decentralized Web Frameworks Take Center Stage at San Francisco Summit",
-    "date": "June 16, 2026",
-    "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=600&auto=format&fit=crop",
-    "summary": "Engineers showcase ultra-lightweight edge computing models that completely bypass traditional server infrastructure bottlenecks.",
-    "content": ""
-  },
-  {
-  "id": "china-metal-exports-g7-clash-2026",
-  "category": "BUSINESS",
-  "isFeatured": true,
-  "title": "Global Supply Shock: China’s Critical Metal Export Revenue Surges 44% Amid Looming Deadlines",
-  "date": "June 17, 2026",
-  "image": "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?q=80&w=1200&auto=format&fit=crop",
-  "summary": "As G7 leaders meet to confront Western over-reliance on Beijing’s industrial supply chains, a dramatic surge in rare earth values and a massive shift in global zinc and steel flows have put global tech manufacturers on high alert.",
-  "content": "A high-stakes economic standoff is intensifying across global supply chains. Fresh trade data reveals that while China's export volumes of critical rare earth elements grew by a modest 2.2% early this year, the financial value of those shipments skyrocketed by a staggering 44.9% to over $243 million. This massive revenue surge underscores global desperation to secure strategic stockpiles before Beijing’s highly controversial 'Notice 61'—which enforces a strict 0.1% extraterritorial licensing threshold on any global tech component containing Chinese rare earths—is scheduled to reactivate on November 10, 2026. Simultaneously, structural shifts are roiling heavy industry: a domestic manufacturing surplus is pushing China to become a net exporter of refined zinc for the first time in four years, while its steel mills are flooding global markets with semi-finished products to successfully bypass mounting Western anti-dumping tariffs."
-}
+  }
 ]
